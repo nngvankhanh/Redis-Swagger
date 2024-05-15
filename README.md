@@ -1,15 +1,17 @@
-api/auth/login HttpMethod Get
+access swagger's path: http://localhost:8080/swagger-ui/index.html
+
+methodHttp Get : /api/auth/login
 
 {
-"username" : "user",
-"password" : "user"
+  "username": "user",
+  "password": "user"
 }
 or
 {
-"username" : "admin",
-"password" : "admin"
+  "username": "admin",
+  "password": "admin"
 }
 
-api/auth/user-info HttpMethod Get
+String token = "Bearer token"
 
-Set token in header: (token...)
+Authorization by key: token
